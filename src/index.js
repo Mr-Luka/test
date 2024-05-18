@@ -16,7 +16,7 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-const digi = {
+ const digi = {
         digi1: {
             name: "Agumon",
             friend: "Taichi"
@@ -35,8 +35,9 @@ const digi = {
         }
     }
 
-    const digimon = () => {
+ export   const digimon = () => {
     Object.values(digi).forEach(dig => {
+      return `I love ${dig.name} and ${dig.friend}!`;
         console.log(`I love ${dig.name} and ${dig.friend}!`);
     })
 }
