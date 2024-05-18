@@ -35,10 +35,8 @@ reportWebVitals();
         }
     }
 
- export   const digimon = () => {
-    Object.values(digi).forEach(dig => {
-      return `I love ${dig.name} and ${dig.friend}!`;
-        console.log(`I love ${dig.name} and ${dig.friend}!`);
-    })
+export const digimon = () => {
+    const messages = Object.values(digi).map(dig => `I love ${dig.name} and ${dig.friend}!`);
+    return messages;
 }
 digimon()
