@@ -35,9 +35,4 @@ const digi = {
         }
     }
 
-    const digimon = () => {
-    Object.values(digi).forEach(dig => {
-        console.log(`I love ${dig.name} and ${dig.friend}!`);
-    })
-}
-digimon()
+
